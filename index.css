@@ -1,0 +1,262 @@
+/* we set the fonts for the all of our content here, as it will all appear within the body, and we set the font-color as well. we also set the background image here as well, and fix it in the center with no repeats */
+
+body {
+    font-family: Libre Baskerville;
+    color: rgba(44, 1, 1, 0.753);
+    background: url('http://www.marcdalessio.com/wp-content/uploads/2009/04/vladimirka.jpg') no-repeat center center fixed;
+    background-size: cover;
+    }
+
+/* question no. and user score in a footer at the bottom - though I'd like to see them on either side up top as well */
+
+footer > ul {
+  list-style-type: none;
+  font-family: 'Bitter', serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px 10px;
+  color: rgb(31, 19, 1);
+  margin-top: 35px;
+  display: inline-block;
+  /* width: 15%; */
+  background-color: #847045c7;
+}
+
+footer {
+  text-align: center;
+}
+
+/* set styles for start page */
+
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 2px;
+}
+
+/* set styles for start page text */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 60px;
+    font-weight: bolder;
+}
+button {
+    padding: 10px;
+    border: solid black 1px;
+    color: rgba(243, 205, 37, 0.959);
+    background-color:rgba(0, 0, 0, 0.521);
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 2%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px
+}
+
+.submitButton {
+  font-size: 20px;
+  text-align: center;
+}
+
+button:hover, button:focus {
+    background-color: #110505b4;
+    color: #bb290f;
+}
+
+main div {
+    margin: 0 auto;
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #060d46;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color: #B5BAA4;
+
+}
+fieldset {
+    border: none;
+    border-radius: 1%;
+    background-color: #847045;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+/* .accessibility {
+  position: absolute;
+  left: -999em;
+} */
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #06053d;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+.answer-page-questions {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #060d46;
+    font-size: 35px;
+}
+span {
+  font-size: 30px;
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: #A18858;
+    color: #171e41;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 3%;
+    
+}
+form button:hover, form button:focus {
+    background-color: #661a10;
+    color: rgba(209, 129, 23, 0.959);
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    margin-top: 50px;
+    display: none;
+    width: 500px;
+}
+.correctFeedback {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(243, 229, 174) 0%, rgb(230, 223, 124) 100%);
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.correctFeedback button {
+    width: 50%;
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.correctFeedback img {
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(112, 84, 5);
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}
+h3 {
+    color: #AF6438;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 150px;
+    height: auto;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+
+/* 725? */
+
+@media screen and (max-width: 768px) {
+
+footer > ul {
+  background-color: #847045c9;
+  margin-top: 10px;
+}
+.questionAnswerForm {
+    margin-top: 35px;
+    width: 75%;
+  }
+.quizStart {
+    width: 70%;
+  }
+label span {
+  font-size: 16px;
+}
+h1 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 20px;
+}
+button {
+  font-size: 16px;
+}
+footer > ul {
+  font-size: 16px;
+}
+
+span, p {
+  font-size: 16px;
+}
+
+img {
+  width: 50%;
+}
+
+.correctFeedback p {
+  font-size: 16px;
+}
+
+.submitButton {
+  font-size: 16px;
+  text-align: center;
+}
+}
